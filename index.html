@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mr. Nice Hangman</title>
+  <link href="css/cosmo.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-offset-2 col-lg-8">
+        <div class="row">  
+          <h1 style="margin-bottom: 2em; font-size:4em; margin-top:1em" class="text-center" id="header">Mr. Nice Hangman</h1>
+        </div>
+        <div class="row">
+        	<div class="col-lg-12" style="margin-bottom: 2em">
+            <p class="text-center" style="font-size: 3em"><strong id="result"></strong></p>
+        	</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-10">
+            <div class="well">
+              <p class="text-center" style="font-size: 2em"><span>Guesses: </span><strong id="guesses"></strong></p>
+            </div>
+          </div>
+          <div class="col-lg-2 well" style="height: 93px">
+            <!-- <span>Guesses left: </span> --><p class="text-center" style="margin-bottom: 0"><strong><span id="guessesleft" style="font-size: 2.5em"></span></strong></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-10">
+            <input type="text" class="form-control" style="font-size:41px; height:61px" maxlength="1" name="guess" id="guesschar" placeholder="Pick a letter:"/>
+          </div>
+          <div class="col-lg-2" style="padding-left: 0">
+            <button id="guessbutton" type="button" class="btn btn-primary btn-lg active" style="width: 130px">Guess</button>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 5em">
+        	<div class="col-lg-12">
+				<p id="alertbox" class="text-warning" style="font-size:2em"></p>
+        	</div>
+        </div>
+        <div class="row" style="margin-bottom:5em">
+        <p class="text-center">
+          <button id="playagain" type="button" class="btn btn-success btn-lg">Try Again?</button></p>
+        </div>
+        <div class="row">
+          <div class="checkbox">
+            Debug: <input type="checkbox" id="debug"> 
+          </div>
+          <pre id="output">
+          </pre>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/dictionary.js"></script>
+  <script src="hangman.js"></script>
+</body>
+
+</html>
